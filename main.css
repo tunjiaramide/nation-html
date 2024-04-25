@@ -730,6 +730,53 @@ footer {
 
 
 
+/* about us */
+
+.aboutus {
+    display: flex;
+    padding: 100px;
+}
+
+.aboutus ul{
+    line-height: 2;
+}
+
+.aboutus li {
+    list-style-type: disc;
+}
+
+.aboutus__leftside {
+    flex: 2; /* Take up 2/3 of the container width */
+    box-sizing: border-box;
+}
+
+.aboutus__rightside {
+    flex: 1; /* Take up 1/3 of the container width */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.aboutus__rightside a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    color: var(--dark-color);
+}
+
+@media only screen and (max-width: 768px) {
+            .aboutus {
+                flex-direction: column;
+                padding: 50px;
+            }
+            .leftside, .rightside {
+                flex: none;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .rightside {
+                text-align: left;
+            }
+        }
 
 
   
