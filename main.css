@@ -33,9 +33,35 @@ a {
 .container {
     padding-left:60px;
     padding-right:60px;
-    max-width: 1400px;
-   
-   
+    max-width: 1400px; 
+}
+
+.desktop_only {
+    display: block;
+}
+
+.mobile_only {
+    display: none;
+}
+
+/* Mobile styles for smaller screens */
+@media only screen and (max-width: 767px) {
+    /* Adjust the container padding and max-width */
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 100%;
+    }
+    .mobile_only {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .desktop_only {
+        display: none;
+    }
+
 }
 
 /* Advertisement */
@@ -198,6 +224,59 @@ a.topbar__link {
     padding-bottom: 5px;
 }
 
+/* Mobile styles for smaller screens */
+@media only screen and (max-width: 767px) {
+    /* Adjust header and navigation for mobile */
+
+    .topbar {
+        flex-direction: row;
+    }
+
+    .topbar__date, a.topbar__link {
+        font-size: 9px;
+    }
+
+    .logobar {
+       justify-content: center;
+       padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .logobar__logo {
+        width: 150px;
+    }
+
+    .logobar__logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .logobar__socialmenu {
+        display: none;
+    }
+
+    .logobar__search {
+        display: none;
+    }
+    .nav {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .nav__navlist {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav__navlist li {
+        margin-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+}
+
+
 
 /* Featured HomePage */
 .featured {
@@ -353,6 +432,59 @@ a.topbar__link {
 }
 
 
+/* Mobile styles for smaller screens */
+@media only screen and (max-width: 767px) {
+    /* Adjust the container padding and max-width */
+    .featured {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .featured__breaking {
+        order: 1;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 30px;
+        
+    }
+
+    .featured__breaking__image {
+        width: 100%;
+        height: 230px;
+    }
+
+    .featured__breaking__content h1 {
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+
+    .featured__breaking__content button {
+        display: none;
+    }
+    .featured__breaking__more {
+        flex-direction: column;
+    }
+
+    .featured__breaking__more__box {
+        border-bottom: 1px solid var(--gray-color);
+    }
+
+    .featured__latest {
+        order: 3;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .featured__advert {
+        order: 2;
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
+
+
 /* Catergory listing */
 .categoryfull {
     padding-top: 50px;
@@ -447,7 +579,6 @@ a.topbar__link {
     font-weight: normal;
 }
 
-
 .categoryfull__advert {
     width: 30%;
 }
@@ -465,6 +596,38 @@ a.topbar__link {
 .categoryfull__readmore button a {
     text-transform: uppercase;
     color: #ffffff;
+}
+
+/* Mobile styles for smaller screens */
+@media only screen and (max-width: 767px) {
+    .categoryfull__box {
+        flex-direction: column;
+    }
+
+    .categoryfull__single {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .categoryfull__single__image {
+        width: 100%;
+        height: 230px;
+    }
+
+    .categoryfull__single__image img {
+        height: 100%;
+    }
+
+    .categoryfull__listings {
+        width: 100%; 
+    }
+
+    .categoryfull__advert {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
 }
 
 /* Single item category */
@@ -609,6 +772,20 @@ a.topbar__link {
 }
 
 
+/* Mobile styles for smaller screens */
+@media only screen and (max-width: 767px) {
+        .categoryitem {
+        flex-direction: column;
+    }
+
+    .categoryrow_listing {
+        flex-direction: column;
+    }
+}
+
+/* Columnist */
+
+
 .columnist {
     padding-top: 20px;
     padding-bottom: 50px;
@@ -727,6 +904,9 @@ footer {
     color: var(--pure-gray);
     font-size: 12px;
 }
+
+
+
 
 
 
