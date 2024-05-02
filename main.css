@@ -170,6 +170,7 @@ a.topbar__link {
 .logobar__socialmenu {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .logobar__socialmenu li {
@@ -1480,6 +1481,7 @@ footer {
 .article__logo__container .article__logobar__socialmenu{
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: sticky;
     top: 200px;
     z-index: 100;
