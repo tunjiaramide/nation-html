@@ -1875,7 +1875,7 @@ footer {
 
 .advertise__inner__container{
     padding-top: 40px;
-    background-color: var(--light-gray-color);
+    background-color: var(--white-color);
     border-radius: 20px;
     width: 80%;
     padding-bottom: 50px;
@@ -1898,7 +1898,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    background-color: var(--main-color);
+    background-color: var(--main-color);    
     color: var(--white-color);
     padding: 40px 60px;
     border-radius: 10px;
@@ -1920,10 +1920,11 @@ footer {
 table { 
     width: 80%; 
     border-collapse: collapse; 
+    border: 1px solid var(--gray-color);
   }
   /* Zebra striping */
   tr:nth-of-type(odd) { 
-    background: #eee; 
+    /* background: #eee;  */
   }
   th { 
     background: var(--main-color); 
@@ -1931,7 +1932,7 @@ table {
     font-weight: bold; 
   }
   td, th { 
-    padding: 6px; 
+    padding: 10px; 
     /* border: 1px solid #ccc;  */
     text-align: left; 
   }
@@ -1971,7 +1972,17 @@ table {
     margin-top: 20px;
     font-size: 40px;
 }
+/* Chart */
+.chart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
+.chart .chart__distribution {
+    height: 300px;
+}
 .incharge{
     display: flex;
     flex-direction: row;
@@ -2156,6 +2167,17 @@ table {
     .webmaster .office{
         font-size: 20px;
         color: var(--main-color);
+    }
+
+    .chart{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .chart .chart__distribution {
+        height: 300px;
     }
     
 }
